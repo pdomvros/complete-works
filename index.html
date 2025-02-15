@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Εκπαιδευτική Σελίδα</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('classroom.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .button:nth-child(1) { background-color: #ff6b6b; }
+        .button:nth-child(2) { background-color: #6bc5ff; }
+        .button:nth-child(3) { background-color: #6bff85; }
+        .button:nth-child(4) { background-color: #ffc76b; }
+        .button:nth-child(5) { background-color: #c29fff; }
+        .button:nth-child(6) { background-color: #ffb6c1; }
+        .button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="dropdown">
+            <button class="button">Ανθρωπιστικές Σπουδές</button>
+            <div class="dropdown-content">
+                <a href="https://pdomvros.github.io/lyo-race/">Αρχαία Ελληνική Γλώσσα</a>
+                <a href="https://pdomvros.github.io/odyssey-race/">Αρχαία Ελληνική Λογοτεχνία</a>
+                <a href="https://pdomvros.github.io/literature-race/">Νεοελληνική Λογοτεχνία</a>
+                <a href="https://panagiotis-domvros.github.io/back-to-the-future/">Ιστορία</a>
+                <a href="https://pdomvros.github.io/Peloponnesian-War-Game-1/">Πελοποννησιακός Πόλεμος</a>
+                <a href="https://pdomvros.github.io/Valentine-Ancient-Greece/">Θρησκευτικά</a>
+                <a href="https://pdomvros.github.io/athens1/">Κοινωνική και Πολιτική Αγωγή</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button">Θετικές Σπουδές</button>
+            <div class="dropdown-content">
+                <a href="#">Μαθηματικά</a>
+                <a href="#">Φυσική</a>
+                <a href="#">Χημεία</a>
+                <a href="#">Βιολογία</a>
+                <a href="#">Γεωγραφία</a>
+                <a href="#">Τεχνολογία</a>
+                <a href="#">Πληροφορική</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button">Ξένες Γλώσσες</button>
+            <div class="dropdown-content">
+                <a href="https://panagiotis-domvros.github.io/back-to-the-future-2/">Αγγλικά</a>
+                <a href="#">Γερμανικά</a>
+                <a href="#">Γαλλικά</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button">Γενικές Δεξιότητες</button>
+            <div class="dropdown-content">
+                <a href="#">Εργαστήρια Δεξιοτήτων</a>
+                <a href="#">Μουσική</a>
+                <a href="#">Καλλιτεχνική Δημιουργία</a>
+                <a href="#">Φυσική Αγωγή</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button">Διάφορα</button>
+            <div class="dropdown-content">
+                <a href="https://pdomvros.github.io/past-letters/">Past Letters</a>
+                <a href="https://pdomvros.github.io/love-hangman-gr/">Love Hangman GR</a>
+                <a href="https://pdomvros.github.io/epistoles-apo-to-parelthon/">Επιστολές από το παρελθόν</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button">YouTube</button>
+            <div class="dropdown-content">
+                <a href="https://www.youtube.com/channel/UCn0jq-LEikDRVDQHQi47eYw">Κανάλι YouTube</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
