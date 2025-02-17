@@ -3,126 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Εκπαιδευτική Σελίδα</title>
+    <title>Εκπαιδευτικό Υλικό για το Γυμνάσιο</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background: url('classroom.png') no-repeat center center fixed;
+            font-family: 'Comfortaa', sans-serif;
+            background-image: url('classroom.png');
             background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+            background-position: center;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
         }
-        .button-container {
-            display: flex;
-            gap: 15px;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-        .dropdown {
-            position: relative;
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
             display: inline-block;
+            margin: 20px auto;
         }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 250px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            z-index: 1;
+        .contact {
+            margin-top: 20px;
         }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
+        .contact a {
             text-decoration: none;
+            color: #333;
             display: block;
+            margin: 5px 0;
         }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
         }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .button {
-            padding: 15px 30px;
-            font-size: 18px;
+        .buttons button {
+            font-family: 'Comfortaa', sans-serif;
+            font-weight: 600;
+            padding: 15px 20px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 1em;
             color: white;
-            border-radius: 8px;
-            transition: 0.3s;
+            transition: background 0.3s;
         }
-        .button:nth-child(1) { background-color: #ff6b6b; }
-        .button:nth-child(2) { background-color: #6bc5ff; }
-        .button:nth-child(3) { background-color: #6bff85; }
-        .button:nth-child(4) { background-color: #ffc76b; }
-        .button:nth-child(5) { background-color: #c29fff; }
-        .button:nth-child(6) { background-color: #ffb6c1; }
-        .button:hover {
+        .buttons button:hover {
             opacity: 0.8;
+        }
+        .footer-buttons {
+            margin-top: 40px;
+        }
+        .footer-buttons a {
+            text-decoration: none;
+            color: white;
+            background: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 1em;
+        }
+        .footer-buttons a:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="button-container">
-        <div class="dropdown">
-            <button class="button">Ανθρωπιστικές Σπουδές</button>
-            <div class="dropdown-content">
-                <a href="https://pdomvros.github.io/lyo-race/">Αρχαία Ελληνική Γλώσσα</a>
-                <a href="https://pdomvros.github.io/odyssey-race/">Αρχαία Ελληνική Λογοτεχνία</a>
-                <a href="https://pdomvros.github.io/literature-race/">Νεοελληνική Λογοτεχνία</a>
-                <a href="https://panagiotis-domvros.github.io/back-to-the-future/">Ιστορία</a>
-                <a href="https://pdomvros.github.io/Peloponnesian-War-Game-1/">Πελοποννησιακός Πόλεμος</a>
-                <a href="https://pdomvros.github.io/Valentine-Ancient-Greece/">Θρησκευτικά</a>
-                <a href="https://pdomvros.github.io/athens1/">Κοινωνική και Πολιτική Αγωγή</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="button">Θετικές Σπουδές</button>
-            <div class="dropdown-content">
-                <a href="#">Μαθηματικά</a>
-                <a href="#">Φυσική</a>
-                <a href="#">Χημεία</a>
-                <a href="#">Βιολογία</a>
-                <a href="#">Γεωγραφία</a>
-                <a href="#">Τεχνολογία</a>
-                <a href="#">Πληροφορική</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="button">Ξένες Γλώσσες</button>
-            <div class="dropdown-content">
-                <a href="https://panagiotis-domvros.github.io/back-to-the-future-2/">Αγγλικά</a>
-                <a href="#">Γερμανικά</a>
-                <a href="#">Γαλλικά</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="button">Γενικές Δεξιότητες</button>
-            <div class="dropdown-content">
-                <a href="#">Εργαστήρια Δεξιοτήτων</a>
-                <a href="#">Μουσική</a>
-                <a href="#">Καλλιτεχνική Δημιουργία</a>
-                <a href="#">Φυσική Αγωγή</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="button">Διάφορα</button>
-            <div class="dropdown-content">
-                <a href="https://pdomvros.github.io/past-letters/">Past Letters</a>
-                <a href="https://pdomvros.github.io/love-hangman-gr/">Love Hangman GR</a>
-                <a href="https://pdomvros.github.io/epistoles-apo-to-parelthon/">Επιστολές από το παρελθόν</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="button">YouTube</button>
-            <div class="dropdown-content">
-                <a href="https://www.youtube.com/channel/UCn0jq-LEikDRVDQHQi47eYw">Κανάλι YouTube</a>
-            </div>
-        </div>
+    <h1>Εκπαιδευτικό Υλικό για το Γυμνάσιο</h1>
+    <h2>Εφαρμογές για Διαδραστικούς Πίνακες και άλλο Εκπαιδευτικό Υλικό</h2>
+    <div class="box">
+        Δημιουργία: Παναγιώτης Δόμβρος (CC BY-NC)
+    </div>
+    <div class="contact">
+        <p>📧 p.domvros@gmail.com</p>
+        <p>📘 <a href="https://www.facebook.com/panayotis.domvros/" target="_blank">Facebook</a></p>
+        <p>📸 <a href="https://www.instagram.com/p_domvros/" target="_blank">Instagram</a></p>
+    </div>
+    <div class="buttons">
+        <button style="background: #FF5733;" onclick="window.open('https://panagiotis-domvros.github.io/back-to-the-future/', '_blank')">Αρχαία Ελληνική Ιστορία</button>
+        <button style="background: #33FF57;" onclick="window.open('https://pdomvros.github.io/odyssey-race/', '_blank')">Αρχαία Ελληνική Γραμματεία</button>
+        <button style="background: #3357FF;" onclick="window.open('https://pdomvros.github.io/lyo-race/', '_blank')">Αρχαία Ελληνική Γλώσσα</button>
+        <button style="background: #FF33A1;" onclick="window.open('https://pdomvros.github.io/literature-race/', '_blank')">Νεοελληνική Γλώσσα</button>
+        <button style="background: #A133FF;" onclick="window.open('https://panagiotis-domvros.github.io/back-to-the-future-2/', '_blank')">Αγγλικά</button>
+        <button style="background: #33FFF5;" onclick="window.open('https://pdomvros.github.io/love-hangman-gr/', '_blank')">Διάφορα</button>
+    </div>
+    <div class="footer-buttons">
+        <a href="https://eclass11.sch.gr/modules/video/?course=1901051484" target="_blank">Οπτικοποιήσεις Γυμνασίου στο YouTube</a>
+        <a href="https://www.youtube.com/channel/UCn0jq-LEikDRVDQHQi47eYw" target="_blank">YouTube</a>
     </div>
 </body>
 </html>
-
