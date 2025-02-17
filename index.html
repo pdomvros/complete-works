@@ -34,14 +34,18 @@
             border-radius: 10px;
             display: inline-block;
             margin: 20px auto;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 900;
+            line-height: 1.2; /* Μικρότερο spacing */
         }
         .contact {
             margin-top: 20px;
+            line-height: 1.2; /* Μικρότερο spacing */
         }
         .contact a {
             text-decoration: none;
             color: #333;
-            display: block;
+            display: inline-block; /* Σύμβολα και links στην ίδια γραμμή */
             margin: 5px 0;
         }
         .buttons {
@@ -128,7 +132,7 @@
         Δημιουργία: Παναγιώτης Δόμβρος (CC BY-NC)
     </div>
     <div class="contact">
-        <p>📧 p.domvros@gmail.com</p>
+        <p>📧 <a href="mailto:p.domvros@gmail.com">p.domvros@gmail.com</a></p>
         <p>📘 <a href="https://www.facebook.com/panayotis.domvros/" target="_blank">Facebook</a></p>
         <p>📸 <a href="https://www.instagram.com/p_domvros/" target="_blank">Instagram</a></p>
     </div>
@@ -136,7 +140,8 @@
         <button style="background: #FF5733;" onclick="openModal('historyModal')">Αρχαία Ελληνική Ιστορία</button>
         <button style="background: #33FF57;" onclick="openModal('literatureModal')">Αρχαία Ελληνική Γραμματεία</button>
         <button style="background: #3357FF;" onclick="openModal('languageModal')">Αρχαία Ελληνική Γλώσσα</button>
-        <button style="background: #FF33A1;" onclick="openModal('modernGreekModal')">Νεοελληνική Γλώσσα</button>
+        <button style="background: #FF33A1;" onclick="openModal('modernLiteratureModal')">Νεοελληνική Λογοτεχνία</button>
+        <button style="background: #A133FF;" onclick="openModal('modernLanguageModal')">Νεοελληνική Γλώσσα</button>
         <button style="background: #A133FF;" onclick="openModal('englishModal')">Αγγλικά</button>
         <button style="background: #33FFF5;" onclick="openModal('miscModal')">Διάφορα</button>
     </div>
@@ -192,12 +197,22 @@
         </div>
     </div>
 
-    <div id="modernGreekModal" class="modal">
+    <div id="modernLiteratureModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modernGreekModal')">&times;</span>
-            <h3>Νεοελληνική Γλώσσα</h3>
+            <span class="close" onclick="closeModal('modernLiteratureModal')">&times;</span>
+            <h3>Νεοελληνική Λογοτεχνία</h3>
             <div class="modal-links">
                 <a href="https://pdomvros.github.io/literature-race/" target="_blank">Εισαγωγή στη Νεοελληνική Λογοτεχνία</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modernLanguageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modernLanguageModal')">&times;</span>
+            <h3>Νεοελληνική Γλώσσα</h3>
+            <div class="modal-links">
+                <!-- Προσθήκη περιεχομένου εδώ αργότερα -->
             </div>
         </div>
     </div>
